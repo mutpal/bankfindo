@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bank Details</title>
+    <link rel='stylesheet' href='/stylesheets/result.css' />
+  </head>
+  <body>
+	<div class="wrapAll">
+		<div class="result">
+			<h2 id=headingTag>BANK DETAIL</h2>
+			<ul >
+				<li>ADDRESS : <spawn> <%= data.ADDRESS %></spawn></li><br>
+				<li>STATE: <spawn> <%= data.STATE %></spawn></li><br>
+				<li>CONTACT:<spawn> <%= data.CONTACT %></spawn></li><br>
+				<li>BRANCH:<spawn> <%= data.BRANCH %></spawn></li><br>
+				<li>CITY:<spawn> <%= data.CITY %></spawn></li><br>
+				<li>DISTRICT:<spawn> <%= data.DISTRICT %></spawn></li><br>
+				<li>BANK CODE:<spawn> <%= data.BANKCODE %></spawn></li><br>
+			</ul>
+			<button>Go Back</button>
+		</div>
+  	<div>
+  	<script>
+  		let goBack = document.querySelector("button");
+  		goBack.onclick(function (argument) {
+  			window.location = "/";
+  		})
+  	</script>
+  </body>
+</html>
