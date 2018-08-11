@@ -1,3 +1,3 @@
-function verify(err,res) {
-	if()
+function validation(err,res) {
+	
 }
